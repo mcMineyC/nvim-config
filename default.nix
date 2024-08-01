@@ -3,7 +3,7 @@
 
 pkgs.stdenv.mkDerivation {
   name = "nvim-config";
-#   src = ./;
+#   src = null;
 
   buildInputs = with pkgs; [
     neovim
@@ -19,8 +19,8 @@ pkgs.stdenv.mkDerivation {
   ];
 
   phases = [
-    "unpackPhase"
-    "buildPhase"
+    # "unpackPhase"
+    # "buildPhase"
     "installPhase"
     # "postFixup"
     # "myPersonalConfusingPhase"
@@ -36,7 +36,7 @@ pkgs.stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out
-    cp . $out
+    cp -r . $out
   '';
 
 #   postFixup = ''
