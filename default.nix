@@ -3,7 +3,6 @@
 
 pkgs.stdenv.mkDerivation {
   name = "nvim-config";
-#   src = null;
 
   buildInputs = with pkgs; [
     neovim
@@ -19,34 +18,11 @@ pkgs.stdenv.mkDerivation {
   ];
 
   phases = [
-    # "unpackPhase"
-    # "buildPhase"
     "installPhase"
-    # "postFixup"
-    # "myPersonalConfusingPhase"
   ];
-
-#   buildPhase = ''
-#     g++ hello-world.cpp -o hello-world
-#   '';
-
-  # buildPhase = ''
-  #   g++ hello-world.cpp -o hello-world -lncurses
-  # '';
 
   installPhase = ''
     mkdir -p $out
     cp -r . $out
   '';
-
-#   postFixup = ''
-#     wrapProgram $out/bin/hello-world \
-#       --set PATH ${pkgs.lib.makeBinPath (with pkgs; [
-#         cowsay
-#       ])}
-#   '';
-
-  # myPersonalConfusingPhase = ''
-  #   echo "hi" > $out/hi
-  # '';
 }
