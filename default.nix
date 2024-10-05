@@ -15,6 +15,7 @@ pkgs.stdenv.mkDerivation {
       wl-clipboard-x11
       wl-clipboard
       unzip
+      clang-tools
   ];
 
   phases = [

@@ -78,4 +78,11 @@ return {
   		},
   	},
   },
+  {
+    "sbdchd/neoformat",
+    lazy = false,
+    -- opts = {
+    --   indent_style = "tab",
+    -- },
+  }
 }
