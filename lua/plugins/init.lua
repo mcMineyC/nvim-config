@@ -84,5 +84,9 @@ return {
     -- opts = {
     --   indent_style = "tab",
     -- },
+  },
+  {
+    'wakatime/vim-wakatime',
+    lazy = false
   }
 }
