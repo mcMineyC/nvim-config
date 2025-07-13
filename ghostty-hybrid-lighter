@@ -1,0 +1,19 @@
+palette = 8=#282a2e
+palette = 9=#a54242
+palette = 10=#8c9440
+palette = 11=#de935f
+palette = 12=#598ab3
+palette = 13=#85678f
+palette = 14=#468c8c
+palette = 15=#707880
+palette = 0=#373b41
+palette = 1=#cc6666
+palette = 2=#b5bd68
+palette = 3=#f0c674
+palette = 4=#6f9cbf
+palette = 5=#b294bb
+palette = 6=#8abeb7
+palette = 7=#c5c8c6
+
+foreground = c5c8c6
+background = 1d1f21
